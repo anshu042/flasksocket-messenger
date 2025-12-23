@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="/static/auth.css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1 class="welcome-heading">Welcome in FlaskSocket Messenger</h1>
+<div class="wrapper">
+    <div class="title-text">
+        <div class="title login">LOGIN</div>
+        <div class="title signup">SIGNUP</div>
+    </div>
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="{{ url_for('views.login') }}" method="POST" class="login">
+                <div class="field">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Log in">
+                </div>
+                <div class="signup-link">Not a member? <a href="">SignUp now</a></div>
+            </form>
+            <form action="{{ url_for('views.register') }}" method="POST" class="signup">
+    <div class="field">
+        <input type="text" name="username" placeholder="Username" required>
+    </div>
+    <div class="field">
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="field">
+        <input type="password" name="password" placeholder="Password" required>
+    </div>
+    <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" value="Sign up">
+    </div>
+</form>
+        </div>
+    </div>
+</div>
+<script>
+    const loginForm = document.querySelector("form.login");
+    const signupBtn = document.querySelector("label.signup");
+    const loginBtn = document.querySelector("label.login");
+    const signupLink = document.querySelector("form .signup-link a");
+
+    signupBtn.onclick = (() => {
+    loginForm.style.marginLeft = "-50%"; // Moves the first form left by exactly its own width
+    loginText.style.marginLeft = "-50%";
+});
+
+loginBtn.onclick = (() => {
+    loginForm.style.marginLeft = "0%"; // Moves it back to the start
+    loginText.style.marginLeft = "0%";
+});
+
+    signupLink.onclick = (() => {
+        signupBtn.click(); // Allows the link at the bottom to trigger the slide
+        return false;
+    });
+</script>
+</body>
+</html>
