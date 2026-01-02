@@ -19,7 +19,6 @@ A real-time chat application built with **Flask**, **Socket.IO**, and **SQLAlche
 * **WebSockets:** Flask-SocketIO
 * **Database:** SQLite (Default), SQLAlchemy ORM
 * **Frontend:** HTML5, CSS3, JavaScript (Socket.IO client, jQuery)
-* **Data Analysis (Planned):** Pandas, Matplotlib
 * **Server:** Gunicorn (Configuration provided)
 
 ## 📂 Project Structure
