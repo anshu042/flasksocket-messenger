@@ -39,3 +39,27 @@ FlaskSocket-Messenger/
 ├── gunicorn_config.py       # Production server config
 ├── requirements.txt         # Python dependencies
 └── server.py                # Application entry point
+```
+
+## 📖 Usage
+
+- **Register:** Create a new account using the "Signup" form.
+- **Login:** Log in with your credentials.
+- **Start a Chat:**
+    * Click the "New Chat" button.
+    * Enter the email address of another registered user.
+- **Chat:** Select the user from the sidebar and start typing. Messages will appear instantly.
+- **Options:** Use the three-dot menu (⋮) next to a user in the sidebar to **Clear Chat** or **Remove User**.
+
+## 🔜 Future Improvements
+- **Profile Management:** Allow users to update their avatars and bio.
+- **Group Chats:** Extend functionality to support multi-user rooms.
+
+## 🖥️ Preview
+<img width="1919" height="1038" alt="FlaskSocket-Preview01" src="https://github.com/user-attachments/assets/998b0800-48b3-4b71-9600-a9e0f40aa62d" />
+<img width="1919" height="1037" alt="FlaskSocket-Preview02" src="https://github.com/user-attachments/assets/063c9c9d-5c23-4756-8961-0a38574f4636" />
+<img width="1919" height="1034" alt="FlaskSocket-Preview03" src="https://github.com/user-attachments/assets/6b39c8f5-dde4-41d2-8d6e-afa1bbac098b" />
+<img width="1918" height="997" alt="FlaskSocket-Preview04" src="https://github.com/user-attachments/assets/04de44fd-9d18-4cfb-afc1-3e8759d6b192" />
+
+
+
