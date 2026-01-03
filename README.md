@@ -60,5 +60,11 @@ FlaskSocket-Messenger/
 <img width="1919" height="1034" alt="FlaskSocket-Preview03" src="https://github.com/user-attachments/assets/6b39c8f5-dde4-41d2-8d6e-afa1bbac098b" />
 <img width="1918" height="997" alt="FlaskSocket-Preview04" src="https://github.com/user-attachments/assets/04de44fd-9d18-4cfb-afc1-3e8759d6b192" />
 
+## 📫 Connect With Me
+
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anshu04232@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/anshu042)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/anshhu04)
+
 
 
